@@ -14,7 +14,7 @@
   <body class="bg-gray-100">
     <!-- Navbar Section -->
     <div class="navbar bg-base-100 shadow-lg">
-      <button class="btn btn-success">Success</button>
+      <button class="btn btn-success">Blog</button>
       <div class="flex-1 justify-center">
         <a class="btn btn-ghost normal-case text-xl"
           ><img src="assets/logo.png" alt="" /> Donate Bangladesh</a
@@ -23,8 +23,12 @@
       <div class="flex-none">
         <div class="stats shadow">
           <div class="stat">
-            <div class="stat-value">
-              <img src="assets/coin.png" alt="" /> 5500 BDT
+            <div id="main-balance" class="stat-value">
+              <div class="stats shadow">
+                <div class="stat">
+                  <div class="stat-value">20000BDT</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -32,9 +36,9 @@
     </div>
 
     <!-- Tabs Section -->
-    <div class="tabs justify-center my-4">
-      <a class="tab tab-active text-xl">Donation</a>
-      <a class="tab text-xl">History</a>
+    <div class="tabs flex justify-center my-4">
+      <button class="btn">Donation</button>
+      <button class="btn">History</button>
     </div>
 
     <!-- Donation Cards Section -->
@@ -61,11 +65,12 @@
           </p>
           <div class="flex items-center">
             <input
+              id="input-add-money"
               type="number"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full max-w-xs mr-2"
             />
-            <button class="btn btn-success">Donate Now</button>
+            <button id="btn-donate" class="btn btn-success">Donate Now</button>
           </div>
         </div>
       </div>
@@ -97,11 +102,11 @@
           <div class="flex items-center">
             <input
               type="number"
-              placeholder="600 BDT"
+              placeholder="Donate your Amount"
               class="input input-bordered w-full max-w-xs mr-2"
             />
-            <button class="btn btn-success">Donate Now</button>
           </div>
+          <button class="btn btn-success">Donate Now</button>
         </div>
       </div>
 
@@ -132,13 +137,15 @@
           <div class="flex items-center">
             <input
               type="number"
-              placeholder="2400 BDT"
+              placeholder="Donate your Amount"
               class="input input-bordered w-full max-w-xs mr-2"
             />
-            <button class="btn btn-success">Donate Now</button>
+            <button id="add-money" class="btn btn-success">Donate Now</button>
           </div>
         </div>
       </div>
     </div>
+    <script src="utility.js"></script>
+    <script src="add money.js"></script>
   </body>
 </html>
