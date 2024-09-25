@@ -13,18 +13,16 @@
   </head>
   <body class="bg-gray-100">
     <!-- Navbar Section -->
-    <div class="navbar bg-base-100 shadow-lg">
-      <button class="btn btn-success">Blog</button>
+    <div class="navbar bg-base-100 shadow-lg bg-gray-100">
+      <button class="btn bg-green-400">Blog</button>
       <div class="flex-1 justify-center">
         <a class="btn btn-ghost normal-case text-xl"
           ><img src="assets/logo.png" alt="" /> Donate Bangladesh</a
         >
       </div>
       <div class="flex-none">
-        <div class="stats shadow">
           <div class="stat">
             <div id="main-balance" class="stat-value">
-              <div class="stats shadow">
                 <div class="stat">
                   <div class="stat-value">20000BDT</div>
                 </div>
@@ -37,11 +35,12 @@
 
     <!-- Tabs Section -->
     <div class="tabs flex justify-center my-4">
-      <button class="btn">Donation</button>
-      <button id="donation-history" class="btn">History</button>
+      <button class="btn bg-green-400">Donation</button> <br />
+      <button id="donation-history" class="btn bg-green-400">History</button>
       <!-- donation history -->
-      <div id="donation-history-section"></div>
-      <h2 class="text-3xl text-center">Donation History</h2>
+      <div id="hidden donation-history-section">
+        <h2 class="text-3xl text-center">Donation History</h2>
+      </div>
     </div>
 
     <!-- Donation Cards Section -->
@@ -52,9 +51,14 @@
           <img src="assets/noakhali.png" alt="Flood Image" />
         </figure>
         <div class="card-body">
-          <div class="stat-value"><img src="assets/coin.png" alt="" /> BDT</div>
-          <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
-          <p>
+          <div class="stat-value">
+            <img src="assets/coin.png" alt="" />
+            <input type="text" name="" id="" />
+          </div>
+          <h2 class="card-title text-3xl">
+            Donate for Flood at Noakhali, Bangladesh
+          </h2>
+          <p class="text-2xl">
             The recent floods in Noakhali have caused significant damage to
             <br />
             homes infrastructure. Your donation will help provide essential
@@ -73,18 +77,20 @@
               placeholder="Write Donation Amount"
               class="input input-bordered w-full max-w-xs mr-2"
             />
-            <button id="btn-donate" class="btn btn-success">Donate Now</button>
           </div>
+          <button id="btn-donate" class="btn bg-green-400">Donate Now</button>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="card card-side bg-white shadow-xl mb-4 flex justify-center">
+      <div
+        class="card card-side bg-white shadow-xl mb-4 flex justify-center text-2xl"
+      >
         <figure>
           <img src="assets/feni.png" alt="Flood Image" />
         </figure>
         <div class="card-body">
-          <h2 class="card-title">
+          <h2 class="card-title text-3xl">
             Donate for Flood Relief in Feni, Bangladesh
           </h2>
           <p>
@@ -109,17 +115,19 @@
               class="input input-bordered w-full max-w-xs mr-2"
             />
           </div>
-          <button class="btn btn-success">Donate Now</button>
+          <button class="btn bg-green-400">Donate Now</button>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="card card-side bg-white shadow-xl mb-4">
+      <div class="card card-side bg-white shadow-xl mb-4 text-2xl">
         <figure>
           <img src="assets/quota-protest.png" alt="Quota Movement" />
         </figure>
         <div class="card-body">
-          <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+          <h2 class="card-title text-3xl">
+            Aid for Injured in the Quota Movement
+          </h2>
           <p>
             The recent Quota movement has resulted in numerous injuries and
             <br />
@@ -144,7 +152,7 @@
               class="input input-bordered w-full max-w-xs mr-2"
             />
           </div>
-          <button id="add-money" class="btn btn-success">Donate Now</button>
+          <button id="add-money" class="btn bg-green-400">Donate Now</button>
         </div>
       </div>
     </div>
